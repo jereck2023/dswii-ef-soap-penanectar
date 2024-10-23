@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.23 a las 08:00:57 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:getContenidosRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetContenidosRequest"/>
+    </bindings>
+    <bindings scd="tns:getContenidosResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetContenidosResponse"/>
+    </bindings>
+    <bindings scd="~tns:contenidows">
+      <class ref="pe.edu.cibertec.ws.objects.Contenidows"/>
+    </bindings>
+    <bindings scd="tns:getContenidoRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetContenidoRequest"/>
+    </bindings>
+    <bindings scd="tns:getContenidoResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetContenidoResponse"/>
+    </bindings>
+    <bindings scd="tns:postContenidoRequest">
+      <class ref="pe.edu.cibertec.ws.objects.PostContenidoRequest"/>
+    </bindings>
+    <bindings scd="tns:postContenidoResponse">
+      <class ref="pe.edu.cibertec.ws.objects.PostContenidoResponse"/>
+    </bindings>
+    <bindings scd="tns:putContenidoRequest">
+      <class ref="pe.edu.cibertec.ws.objects.PutContenidoRequest"/>
+    </bindings>
+    <bindings scd="tns:putContenidoResponse">
+      <class ref="pe.edu.cibertec.ws.objects.PutContenidoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

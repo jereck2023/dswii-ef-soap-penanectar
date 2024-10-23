@@ -1,0 +1,71 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.edu.pe/ws/objects"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects"
+           elementFormDefault="qualified">
+    <xs:complexType name="contenidows">
+        <xs:sequence>
+            <xs:element name="idcontenido" type="xs:int" />
+            <xs:element name="titulo" type="xs:string" />
+            <xs:element name="idtipo" type="xs:int" />
+            <xs:element name="idgenero" type="xs:int" />
+            <xs:element name="duracion" type="xs:int" />
+            <xs:element name="fecha_estreno" type="xs:string" />
+            <xs:element name="clasificacion" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="getContenidosRequest">
+        <xs:complexType>
+            <xs:sequence />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getContenidosResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contenidos"
+                            type="tns:contenidows" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getContenidoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getContenidoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contenido" type="tns:contenidows" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="postContenidoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contenido" type="tns:contenidows" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="postContenidoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contenido" type="tns:contenidows" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="putContenidoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contenido" type="tns:contenidows" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="putContenidoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="contenido" type="tns:contenidows" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
